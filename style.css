@@ -1,0 +1,43 @@
+:root{
+/* general palette color */
+--background: #40619F;
+--second-background: #0051A1;
+--blue-light: #9FC3E7;
+--blue-white: #E0E5E9;
+}
+
+html{
+    min-height: 100%;
+    font-size: 16px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    padding: 1rem;
+    background-color: var(--background);
+    background-attachment: fixed;
+
+}
+
+h1{
+    font-size: 5rem;
+    /* color: var(); */
+}
+
+.container{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.container >div {
+    margin: 1rem;
+    display: flex;
+    background-color: var(--blue-white);
+    width: 8rem;
+    height: 6rem;
+    align-items: center;
+}
