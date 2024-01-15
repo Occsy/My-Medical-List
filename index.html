@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My-Medic-List</title>
     <link rel="stylesheet" href="/style.css">
     <script defer src="/script.js"></script>
 </head>
 <body>
-    <h1> My-Medic-App</h1>
-
+    <header>
+        <h1> My-Medic-App</h1>
+    </header>
+  
+<aside>
+   <div>
+    <img src="./assets/menu-alt-2-svgrepo-com.svg" />
+   </div> 
+</aside>
+<main>
     <div class="container">
      <div id="pacientes">
-        <span>18<br>Pacientes</span>
-        
-    </div> 
+            <span><h3>18</h3><br>Pacientes</span>
+        </div>
+               
+     
      <!--historial medico, 
         resultados,
         Ultima receta,
@@ -25,24 +35,33 @@
         dieta actual, situacion medica.
         se enlaza con hospitales y cita
      -->
-     <div id="hospitales"> 5    Hospitales</div>
+     <div id="hospitales"> 
+        <span><h3>5</h3><br>Hospitales</span>
+    </div>
      <!--Planta, No. de Oficina, Secretaria, No. de citas, No. consultas,  No. internos
     Se enlaza con pacientes, citas, consultas-->
 
     
-     <div id="citas">2 horas     Siguiente cita</div>
+     <div id="citas">
+        <span><h3>2 horas</h3>
+        <br>
+        Siguiente cita</span>
+    </div>
      <!--Resumen del paciente, mostrar hospital; si esta interno, No. habitacion,
         ultima medicacion, dieta
     -->
-</div>
+    </div>
+</main>
     <footer>
-     <div id="horario">Horario</div>
-     <!--horario del dia
+
+        <small>Derechos Reservados para los dueñs @2024 </small>
+     <!-- <div id="horario">Horario</div>
+    horario del dia
             :No. de hospitales,
             No. de citas
             No. de consultas , 
             todos los horarios-->
-     <div id="Consultas">Consultas</div>
+     <!--div id="Consultas">Consultas</div> -->
      <!-- <div id="Pacientes">Pacientes</div> -->
     </footer>
 </body>
