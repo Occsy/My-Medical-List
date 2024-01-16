@@ -1,0 +1,31 @@
+ <!-- <div id="horario">Horario</div>
+    horario del dia
+            :No. de hospitales,
+            No. de citas
+            No. de consultas , 
+            todos los horarios-->
+     <!--div id="Consultas">Consultas</div> -->
+     <!-- <div id="Pacientes">Pacientes</div> -->
+
+     citas
+       <!--Resumen del paciente, mostrar hospital; si esta interno, No. habitacion,
+        ultima medicacion, dieta
+    -->
+
+hospitales
+
+<!--Planta, No. de Oficina, Secretaria, No. de citas, No. consultas,  No. internos
+    Se enlaza con pacientes, citas, consultas-->
+
+    paciente
+
+     <!--historial medico, 
+        resultados,
+        Ultima receta,
+        Nombre,
+        Situacion o contexto medico,
+        Ultima cita y resumen,
+        en una pestaña de internos, mostrar medicacion actual, ultima medicacion puesta,
+        dieta actual, situacion medica.
+        se enlaza con hospitales y cita
+     -->
