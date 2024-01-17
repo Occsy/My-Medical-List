@@ -1,19 +1,198 @@
-:root{
-/* general palette color */
---background: #40619F;
---second-background: #0051A1;
---blue-light: #9FC3E7;
---blue-white: #E0E5E9;
+:root {
+    /* general palette color */
+    --background: #40619F;
+    --second-background: #0051A1;
+    --blue-light: #9FC3E7;
+    --blue-white: #E0E5E9;
 }
 
-html{
-   height: 100%;
+html {
+    height: 100%;
     font-size: 16px;
-    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
-   min-height: 100%; 
+body {
+    min-height: 100%;
     background-color: var(--background);
+    margin: 1rem;
+    text-align: center;
 }
+
+
+header h1{
+    display: flex;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    color: rgb(212, 232, 250);
+    justify-content: center;
+    border-color: #40619F;
+    text-align: center;
+}
+
+aside{
+    display: flex;
+    justify-content:first baseline;
+}
+
+aside img{
+    width: 3rem;
+    margin: 1rem;
+     transition: transform .3s ease-in;
+}
+
+img:hover{
+    transform: scale(1.1,1.1);
+}
+
+main{
+    display: inline-block;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+main >div{
+    margin: 1rem;
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+    width: 10rem;
+    border: 0.1rem black solid;
+    border-radius: 15px;
+}
+
+
+
+/* .loader {
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.loader:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+.loader:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(0,0,0,0);
+  
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.loader:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.button {
+  background-color: #000;
+  border: 0px;
+  outline: 0px;
+  color: #fff;
+  width: 200px;
+  padding: 20px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.liquid {
+  background-color: #2893eb;
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 5px -5px 25px #104e81,
+  inset -5px 0px 25px #104e81;
+}
+
+.liquid::after {
+  content: '';
+  width: 450px;
+  height: 400px;
+  /* background: #0000; */
+  /*z-index: 1;
+  position: absolute;
+  left: -110px;
+  top: -380px;
+  border-radius: 45%;
+  animation: animate 5s linear 2s infinite;
+}
+
+.liquid::before {
+  content: '';
+  width: 450px;
+  height: 400px;
+  background-color: rgb(68, 160, 235,0.5);
+  z-index: 1;
+  position: absolute;
+  left: -110px;
+  top: -380px;
+  border-radius: 40%;
+  animation: animate 10s linear 1.7s infinite;
+}
+
+.btn-txt {
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */
