@@ -1,89 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-:root {
-    /* general palette color */
-    --background: #40619F;
-    --second-background: #0051A1;
-    --blue-light: #9FC3E7;
-    --blue-white: #E0E5E9;
-}
-
-html {
-    height: 100%;
-    font-size: 16px;
+html{
     font-family: 'Roboto, sans-serif';
-    margin: 0;
-    padding: 0;
 }
-
-body {
+body{
     min-height: 100%;
-    background: linear-gradient(var(--blue-light),  var(--second-background));
-    background-attachment: fixed;
-    margin: 0.5rem;
-    text-align: center;
-   
-}
-
-
-header h1{
-    display: flex;
-    padding-top: 2rem;
-    padding-left: 1.5rem;
-    color: rgb(212, 232, 250);
-    justify-content: center;
-    border-color: #40619F;
-    text-align: center;
-}
-
-aside{
-    display: flex;
-    justify-content: space-between;
-}
-
-aside img{
-    width: 3rem;
-    margin: 1rem;
-     transition: transform .3s ease-in;
-}
-
-img:hover{
-    transform: scale(1.1,1.1);
-}
-
-main{
-    display: inline-block;
-    margin-top: 2rem;
-  
-}
-
-.container-timer{
-    margin: 1rem;
-    display: flex;
-    justify-content: space-around;
-    margin-right: 0;
-    
-}
-
-.container-timer div{
-  margin-left: 1rem;
-  padding-right: 1rem;
-  font-size:0.7rem;
-  justify-content: space-between; 
-  text-align: center;
-}
-
-
-.container-timer >h2{
-  font-weight: bold;
-  font: size 1.5rem;;
-}
-
-footer {
-  border: 2px solid 20px;
-  
-  /* backdrop-filter: blur(5rem);
-  background-color: var(--second-background); */
-  margin-top: 20rem;
+    background-color: #27C6F7;
 }

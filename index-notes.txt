@@ -29,3 +29,8 @@ hospitales
         dieta actual, situacion medica.
         se enlaza con hospitales y cita
      -->
+ horario del dia
+            :No. de hospitales,
+            No. de citas
+            No. de consultas , 
+            todos los horarios

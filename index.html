@@ -1,74 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>My-Medic-List</title>
-    <link rel="stylesheet" href="/style.css">
-    <script defer src="/script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctors' space</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+        :root {
+            --general-color: #00D8EE;
+            --bg-secondary: #E7FDFF;
+            --bg-primary: #EEFCFD;
+        }
+
+        html {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        body {
+            background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary)) no-repeat;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: var(--general-color);
+        }
+
+        .nav-item a,
+        .active a {
+            transition: color .1s ease;
+        }
+
+        .nav-item a:hover,
+        .active a:hover{
+            color: white;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        p {
+            font-style: oblique;
+        }
+        .card{
+            transition: background-color 0.5s ease;
+
+        }
+       .card:hover{
+        background-color: var(--general-color);
+        color: white;
+       }
+      
+       .card-body a{
+        background-color: rgb(0, 0, 0,0);
+        color: black;
+        transition: color 0.5s ease;
+        transition:  background-color 0.5s ease;
+        border-color: var(--general-color);
+       } 
+
+       .card-body a:hover{
+        background-color: var(--general-color);
+        color: white;
+        border-color: white;
+       }
+
+       .footer{
+        max-height: 1rem;
+        background-color: var(--general-color);
+       }
+
+    </style>
 </head>
 
 <body>
-    <aside>
-
-        <div class="slidebar">
-            <img src="./assets/menu-alt-2-svgrepo-com.svg" />
-        </div>
-
-   
-    </aside>
-
-    <header>
-        <h1> My-Medic-Schedule</h1>
-    </header>
-
-    <main>
-
-
-    </main>
-
-<footer>
-
-         <!--Conteo-->
-         <div class="container-timer">
-            <div class="pacientes">
-                <h2>18</h2>
-                <span>Pacientes</span>
-            </div>
-
-            <div class="hospitales">
-                <h2>4</h2>
-                <span>Hospitales</span>
-            </div>
-            <div class="citas">
-                <h2>1.5h</h2>
-                <span>Cita</span>
+    
+    <!--navbar-->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">Doctors' Space</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pacientes.html">Pacientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/hospitales.html">Hospitales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/citas.html">Citas</a>
+                    </li>
+                </ul>
             </div>
         </div>
-</footer>
+    </nav>
 
+    <!--card-->
+    <div class="container text-center my-5">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="./assets/pacientes-2.jpg" class="card-img-top" alt="..." style="height: auto;">
+                    <div class="card-body">
+                        <h2 class="card-title">10 pacientes</h2>
+                        <p class="card-text">10 pacientes por atender hoy. Resumen: 5 internos, 2 en emergencias, 3 en
+                            consultorio
+                            ...</p>
+                        <a href="/pacientes.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-6 col-lg-4">
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="./assets/hospitales.jpg" class="card-img-top" alt="..." style="height: auto;">
+                    <div class="card-body">
+                        <h2 class="card-title">7</h2>
+                        <p class="card-text">Hospitales por visitar: 1.Hospital Traumatologico, 2. Policlinico, 3. Hospital Morillo Kin
+                            ...</p>
+                        <a href="/hospitales.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card m-5" style="width: 18rem;">
+                    <img src="./assets/citas-2.jpg" class="card-img-top image" alt="..." style="height: auto;">
+                    <div class="card-body">
+                        <h2 class="card-title">1.5 horas</h2>
+                        <p class="card-text">Siguiente cita en el Hospital Morillo Kin, habitacion No. 267, Paciente: Leonel Fernandez
+                            ...</p>
+                        <a href="/citas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    
 
-
-
-    <!--
-    <footer>
-
-        <small>Derechos Reservados para los dueñs @2024 </small>
-     <!-- <div id="horario">Horario</div>
-    horario del dia
-            :No. de hospitales,
-            No. de citas
-            No. de consultas , 
-            todos los horarios
-     <!--div id="Consultas">Consultas</div> 
-     <!-- <div id="Pacientes">Pacientes</div> 
-    </footer>-->
 </body>
 
 </html>
